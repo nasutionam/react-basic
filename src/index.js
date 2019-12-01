@@ -3,28 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import HelloComponent from './components/HelloComponent';
+import StateFulComponent from './container/StateFulComponent';
 
-// Stateless Component
-const Hello = () => {
-    return (
-        <p>Hello</p>
-    )
-}
-
-// StateFul Component
-
-class StateFulComponent extends React.Component
-{
-    render() 
-    {
-        return (
-            <p>StateFul Component</p>
-        )
-        
-    }
-}
-
-ReactDOM.render(<StateFulComponent />, document.getElementById('root'));
+ReactDOM.render(<HelloComponent />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
